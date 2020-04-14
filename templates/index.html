@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Build flask app</title>
+  <link rel='stylesheet' href='/static/stylesheet/style.css'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-right nav-stacked mr-auto">
+      <p class="navbar-brand ourBrand">Build flask app</p>
+    </ul>
+    <ul class="nav navbar-right nav-stacked ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/#landingPage">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#installation">Installation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#usage">Usage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#examples">Examples</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+  <div class="container">
+    <div class="section landingPage center" id="landingPage">
+      <div class="row">
+        <div class="col">
+          <h1 class="main-title">Build flask app</h1>
+          <p class="title-info">Building flask apps has been this easy! </p>
+          <div class="code-to-run">
+            <p class="title-in-terminal"><b>root@70606deb02d7:~</b></p>
+            <div class="icon-in-terminal">
+              <i class="fa fa-window-minimize" aria-hidden="true"></i>
+              <i class="fa fa-window-maximize" aria-hidden="true"></i>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <p class="termX-build-flask-app"></p>
+            <!-- <img src="/static/img/logo.jpeg" height="250px" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section installation" id="installation">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-title">Easy to install</h1>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                <h5>
+                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseOne">
+                    Install using pip3 <span class="dropdown-fa"><i class="fa fa-angle-down"
+                        aria-hidden="true"></i></span>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body terminal-card">
+                  <p>$ apt-get install python3-pip
+                    <br />
+                    $ pip3 install build-flask-app
+                    <br />
+                    $ build-flask-app --help
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                <h5>
+                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseTwo">
+                    Install using deb package <span class="dropdown-fa"><i class="fa fa-angle-down"
+                        aria-hidden="true"></i></span>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body terminal-card">
+                  <p>Download the deb package <a href="#">here</a>
+                    <br />
+                    $ sudo dpkg -i build-flask-app_1.0_all.deb
+                    <br />
+                    $ build-flask-app --help
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseThree">
+                <h5>
+                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseThree">
+                    Install from source code on Github <span class="dropdown-fa"><i class="fa fa-angle-down"
+                        aria-hidden="true"></i></span>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body terminal-card">
+                  <p>
+                    $ git clone https://github.com/askyourkode/build-flask-app
+                    <br />
+                    $ cd build-flask-app
+                    <br />
+                    $ python3 build-flask-app --help
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section usage" id="usage">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-title">Easy to use</h1>
+          <div class="row cdn-options">
+            <div class="col">
+              <div class="custom-control">
+                <input type="checkbox" class="bootstrap-check custom-control-input" onclick="return checkCDN()"
+                  id="bootstrap-check">
+                <label class="custom-control-label" for="bootstrap-check">Bootstrap</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="custom-control">
+                <input type="checkbox" class="custom-control-input gsap-check" onclick="return checkCDN()"
+                  id="gsap-check">
+                <label class="custom-control-label gsap-check-label" for="gsap-check">Gsap</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="custom-control">
+                <input type="checkbox" class="custom-control-input jquery-check" onclick="return checkCDN()"
+                  id="jquery-check">
+                <label class="custom-control-label jquery-check-label" for="jquery-check">jQuery</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="custom-control">
+                <input type="checkbox" class="custom-control-input fontawesome-check" onclick="return checkCDN()"
+                  id="fontawesome-check">
+                <label class="custom-control-label fontawesome-check-label" for="fontawesome-check">Font-awesome</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="custom-control">
+                <input type="checkbox" class="custom-control-input docker-check" onclick="return checkCDN()"
+                  id="docker-check">
+                <label class="custom-control-label docker-check-label" for="docker-check">Docker</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="terminal-usage">
+                <p>$ <span class="usage-build-flask-app">build-flask-app hello-world</span></p>
+                <p>$ <span class="usage-cd">cd hello-world/ </span></p>
+                <p>$ <span class="usage-runApp">python3 app.py</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section examples" id="examples">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-title">Examples</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src='/static/js/app.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

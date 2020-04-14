@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.section {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: lightblue;
+}
+
+.ourBrand{
+    font-family: 'Bangers', cursive;
+    color: #007bff !important;
+    font-size: 30px !important;
+    margin-bottom: 0 !important;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #007bff;
+    transition: ease 0.2s;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.nav-item:hover{
+    background-color: white;
+    color: black;
+}
+
+.main-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    letter-spacing: 1.5px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.title-info {
+    text-align: center;
+}
+
+.code-to-run {
+    position: relative;
+    background-color: black;
+    border-top: 25px solid gray;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: lime;
+    padding: 10px;
+    height: 150px;
+}
+
+.code-to-run .title-in-terminal {
+    position: absolute;
+    margin-top: -35px;
+    left: 35%;
+    color: white;
+    text-align: center;
+}
+
+.code-to-run .icon-in-terminal {
+    position: absolute;
+    margin-top: -35px;
+    right: 0;
+    padding-right: 5px;
+    color: white;
+}
+
+.fa-times {
+    color: red;
+}
+
+.section-title {
+    font-family: 'Girassol', cursive;
+    margin-top: 10%;
+}
+
+.card-header{
+    cursor: pointer;
+    height: 60px !important;
+}
+
+.card-title{
+    font-size: 20px !important;
+}
+
+.terminal-card{
+    background-color: black;
+    color: lime;
+}
+
+.custom-control-label{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.terminal-usage{
+    background-color: black;
+    border-top: 35px solid gray;
+    border-radius: 15px 15px 0 0;
+    color: lime;
+    height: 250px;
+    padding: 10px;
+    font-size: 25px;
+}
