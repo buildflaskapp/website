@@ -6,6 +6,10 @@
   <link rel='stylesheet' href='/static/stylesheet/style.css'>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+
+  <!-- <link rel="icon" type="image/png" href="/static/img/logo.jpeg"> -->
+
 </head>
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -38,6 +42,8 @@
   </div>
 </nav>
 
+<a class="github-fork-ribbon left-bottom fixed" href="http://github.com/askyourkode/build-flask-app" target="_blank" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
 <body>
 
   <div class="container">
@@ -54,10 +60,15 @@
               <i class="fa fa-times" aria-hidden="true"></i>
             </div>
             <p class="termX-build-flask-app"></p>
-            <!-- <img src="/static/img/logo.jpeg" height="250px" /> -->
+          </div>
+          <div class="repoz">
+
           </div>
         </div>
       </div>
+    </div>
+    <div class="mini-section logo-section center">
+      <img src="/static/img/logo.jpeg" height="350px" />
     </div>
     <div class="section installation" id="installation">
       <div class="row">
@@ -98,7 +109,7 @@
 
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body terminal-card">
-                  <p>Download the deb package <a href="#">here</a>
+                  <p>Download the deb package <a href="{{ url_for('downloadApp') }}">here</a>
                     <br />
                     $ sudo dpkg -i build-flask-app_1.0_all.deb
                     <br />
@@ -140,43 +151,57 @@
       <div class="row">
         <div class="col">
           <h1 class="section-title">Easy to use</h1>
-          <div class="row cdn-options">
-            <div class="col">
-              <div class="custom-control">
-                <input type="checkbox" class="bootstrap-check custom-control-input" onclick="return checkCDN()"
-                  id="bootstrap-check">
-                <label class="custom-control-label" for="bootstrap-check">Bootstrap</label>
+          <hr />
+          <div class="cdn-options">
+            <div class="row">
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="bootstrap-check custom-control-input" onclick="return checkCDN()"
+                    id="bootstrap-check">
+                  <label class="custom-control-label" for="bootstrap-check">Bootstrap</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="custom-control-input gsap-check" onclick="return checkCDN()"
+                    id="gsap-check">
+                  <label class="custom-control-label gsap-check-label" for="gsap-check">Gsap</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="custom-control-input jquery-check" onclick="return checkCDN()"
+                    id="jquery-check">
+                  <label class="custom-control-label jquery-check-label" for="jquery-check">jQuery</label>
+                </div>
               </div>
             </div>
-            <div class="col">
-              <div class="custom-control">
-                <input type="checkbox" class="custom-control-input gsap-check" onclick="return checkCDN()"
-                  id="gsap-check">
-                <label class="custom-control-label gsap-check-label" for="gsap-check">Gsap</label>
+            <div class="row">
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="custom-control-input fontawesome-check" onclick="return checkCDN()"
+                    id="fontawesome-check">
+                  <label class="custom-control-label fontawesome-check-label"
+                    for="fontawesome-check">Font-awesome</label>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="custom-control">
-                <input type="checkbox" class="custom-control-input jquery-check" onclick="return checkCDN()"
-                  id="jquery-check">
-                <label class="custom-control-label jquery-check-label" for="jquery-check">jQuery</label>
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="custom-control-input docker-check" onclick="return checkCDN()"
+                    id="docker-check">
+                  <label class="custom-control-label docker-check-label" for="docker-check">Docker</label>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="custom-control">
-                <input type="checkbox" class="custom-control-input fontawesome-check" onclick="return checkCDN()"
-                  id="fontawesome-check">
-                <label class="custom-control-label fontawesome-check-label" for="fontawesome-check">Font-awesome</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="custom-control">
-                <input type="checkbox" class="custom-control-input docker-check" onclick="return checkCDN()"
-                  id="docker-check">
-                <label class="custom-control-label docker-check-label" for="docker-check">Docker</label>
+              <div class="col">
+                <div class="custom-control">
+                  <input type="checkbox" class="custom-control-input debugger-check" onclick="return checkCDN()"
+                    id="debugger-check">
+                  <label class="custom-control-label debugger-check-label" for="debugger-check">Debugger</label>
+                </div>
               </div>
             </div>
           </div>
+          <hr />
           <div class="row">
             <div class="col">
               <div class="terminal-usage">
@@ -194,6 +219,25 @@
       <div class="row">
         <div class="col">
           <h1 class="section-title">Examples</h1>
+          <div class="row">
+            <div class="col">
+              <a href="https://styln-vib.herokuapp.com/" target="_blank">
+                <h1>Styln-vibe</h1>
+              </a>
+              <a href="https://kouul-pokedex.herokuapp.com/" target="_blank">
+                <h1>Pokedex</h1>
+              </a>
+              <a href="https://kouul.website/" target="_blank">
+                <h1>My Portfolio</h1>
+              </a>
+              <a href="https://kouuls-todo.herokuapp.com/" target="_blank">
+                <h1>To-Do list</h1>
+              </a>
+              <a href="https://resu-maker.herokuapp.com/" target="_blank">
+                <h1>Resu-maker</h1>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

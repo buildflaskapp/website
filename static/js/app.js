@@ -30,6 +30,10 @@ function checkCDN(){
         theString = theString + ' -fa';
     }
 
+    if (document.querySelector('.debugger-check').checked === true){
+        theString = theString + ' -d';
+    }
+
     if (document.querySelector('.docker-check').checked === true){
         theString = theString + ' -dc';
         document.querySelector('.usage-runApp').innerHTML = 'docker-compose up -d';
