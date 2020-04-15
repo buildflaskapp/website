@@ -51,7 +51,7 @@
       <div class="row">
         <div class="col">
           <h1 class="main-title">Build flask app</h1>
-          <p class="title-info">Building flask apps has been this easy! </p>
+          <p class="title-info">Building flask apps has never been this easy! </p>
           <div class="code-to-run">
             <p class="title-in-terminal"><b>root@70606deb02d7:~</b></p>
             <div class="icon-in-terminal">
@@ -85,13 +85,20 @@
                 </h5>
               </div>
 
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body terminal-card">
-                  <p>$ apt-get install python3-pip
+                  <p>
+                    <h3><u>How to install?</u></h3>
+                    $ apt-get install python3-pip
                     <br />
                     $ pip3 install build-flask-app
                     <br />
                     $ build-flask-app --help
+                  </p>
+                  <p>----------------------------------------------------</p>
+                  <p>
+                    <h3><u>How to uninstall?</u></h3>
+                    $ pip3 uninstall build-flask-app
                   </p>
                   <br />
                 </div>
@@ -111,10 +118,14 @@
                 <div class="card-body terminal-card">
                   <p>Download the deb package <a href="{{ url_for('downloadApp') }}">here</a>
                     <br />
+                    <h3><u>How to install?</u></h3>
                     $ sudo dpkg -i build-flask-app_1.0_all.deb
                     <br />
                     $ build-flask-app --help
                   </p>
+                  <p>----------------------------------------------------</p>
+                  <h3><u>How to uninstall?</u></h3>
+                  $ sudo apt-get remove build-flask-app
                   <br />
                 </div>
               </div>
