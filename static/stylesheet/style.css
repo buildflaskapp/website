@@ -31,7 +31,9 @@
 }
 
 .navbar {
-    /* background-color: lightblue; */
+    background-color: white;
+    border-bottom: 1px solid lightblue;
+    transition: top 0.8s;
 }
 
 .ourBrand{
