@@ -8,7 +8,10 @@ typewriter.typeString('$ build-flask-app hello-world' + '<br/>$ ')
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
     .pauseFor(1500)
-    .typeString('python3 app.py' + '<br/>$')
+    .typeString('python3 app.py' + '<br/>')
+    .pauseFor(2500)
+    .changeDelay(0.01)
+    .typeString('<p class="white-text">* Serving Flask app "app" on localhost:5000</p>')
     .start();
 
 function checkCDN() {
