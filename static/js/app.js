@@ -8,7 +8,7 @@ typewriter.typeString('$ build-flask-app hello-world' + '<br/>$ ')
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
     .pauseFor(1500)
-    .typeString('python3 app.py ')
+    .typeString('python3 app.py' + '<br/>$')
     .start();
 
 function checkCDN() {
