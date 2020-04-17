@@ -11,7 +11,7 @@ typewriter.typeString('$ build-flask-app hello-world' + '<br/>$ ')
     .typeString('python3 app.py' + '<br/>')
     .pauseFor(2500)
     .changeDelay(0.01)
-    .typeString('<p class="white-text">* Serving Flask app "app" on localhost:5000</p>')
+    .typeString('<span class="white-text">* Serving Flask app "app" on localhost:5000</span>')
     .start();
 
 function checkCDN() {
