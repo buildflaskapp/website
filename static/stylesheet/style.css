@@ -115,6 +115,7 @@
 .section-title {
     font-family: 'Girassol', cursive;
     margin-top: 10%;
+    text-align: center;
 }
 
 .card-header {
@@ -153,4 +154,8 @@
     height: 250px;
     padding: 10px;
     font-size: 25px;
+}
+
+.about-text{
+    font-size: 30px;
 }
