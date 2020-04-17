@@ -6,9 +6,10 @@
   <link rel='stylesheet' href='/static/stylesheet/style.css'>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 
-  <!-- <link rel="icon" type="image/png" href="/static/img/logo.jpeg"> -->
+  <link rel="icon" type="image/png" href="/static/img/logo.png">
 
 </head>
 
@@ -27,6 +28,9 @@
         <a class="nav-link" href="/#landingPage">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/#about">About</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/#installation">Installation</a>
       </li>
       <li class="nav-item">
@@ -35,14 +39,12 @@
       <li class="nav-item">
         <a class="nav-link" href="/#examples">Examples</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#contact">Contact</a>
-      </li>
     </ul>
   </div>
 </nav>
 
-<a class="github-fork-ribbon left-bottom fixed" href="http://github.com/askyourkode/build-flask-app" target="_blank" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+<a class="github-fork-ribbon left-bottom fixed" href="http://github.com/askyourkode/build-flask-app" target="_blank"
+  data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
 <body>
 
@@ -61,16 +63,24 @@
             </div>
             <p class="termX-build-flask-app"></p>
           </div>
-          <div class="repoz">
-
-          </div>
         </div>
       </div>
     </div>
-    <div class="mini-section logo-section" style="text-align: center">
-      <img src="/static/img/logo.jpeg" height="350px" />
+    <div class="section logo-section" id="about">
+      <hr />
+      <h1 class="section-title">About</h1>
+      <div class="row">
+        <div class="col-md-5 center about-text">
+          <p>This open source project intends to help flask lovers in generating in hello world skeleton in flask in a single command.</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-5">
+          <img src="/static/img/logo.png" height="350px" />
+        </div>
+      </div>
     </div>
     <div class="section installation" id="installation">
+      <hr />
       <div class="row">
         <div class="col">
           <h1 class="section-title">Easy to install</h1>
@@ -227,9 +237,10 @@
 
     </div>
     <div class="section examples" id="examples">
+      <h1 class="section-title">Examples</h1>
+      <hr />
       <div class="row">
         <div class="col">
-          <h1 class="section-title">Examples</h1>
           <div class="row">
             <div class="col">
               <a href="https://styln-vib.herokuapp.com/" target="_blank">
