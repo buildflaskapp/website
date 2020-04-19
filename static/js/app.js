@@ -4,7 +4,8 @@ var typewriter = new Typewriter(termxBuildFlaskApp, {
     // cursor: " "
 });
 
-typewriter.typeString('$ build-flask-app hello-world' + '<br/>$ ')
+typewriter.pauseFor(3000)
+    .typeString('$ build-flask-app hello-world' + '<br/>$ ')
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
     .pauseFor(1500)
@@ -56,3 +57,4 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
