@@ -57,6 +57,12 @@
     padding: 10px;
 }
 
+.brand-logo{
+    transform: scale(2.1) rotate(15deg);
+    padding: 2px;
+    margin-right: 4px;
+}
+
 .nav-item a {
     text-decoration: none;
     color: #007bff;
