@@ -186,3 +186,20 @@
 .copyright-mark{
     color: white;
 }
+
+.terminal-usage .terminal-usage-title{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    text-align: center;
+    color: white;
+}
+
+.terminal-usage .icon-in-terminal{
+    position: absolute;
+    margin-top: -35px;
+    right: 0;
+    padding-right: 20px;
+    color: white;
+    font-size: 12px;
+}
