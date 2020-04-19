@@ -1,6 +1,6 @@
 gsap.from(".navbar", {duration: 0.5, y: -100, opacity: 0, scale: 1});
 
-gsap.from(".ourBrand", {duration: 0.5, delay:0.5, y: -20, opacity: 0, scale: 1});
+gsap.from(".ourBrand", {duration: 0.5, delay:0.5, y: -20, opacity: 0, ease: "circ.out", scale: 1});
 
 gsap.from(".brand-logo", {duration: 0.5, delay: 0.7, opacity: 0, scale: 1, rotation: 200});
 
