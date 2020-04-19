@@ -181,6 +181,7 @@
     background: #83a4d4;
     background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
     background: linear-gradient(to right, #b6fbff, #83a4d4);
+    border-radius: 10px 10px 0 0;
 }
 
 .copyright-mark{
