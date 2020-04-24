@@ -9,7 +9,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 
-  <link rel="icon" type="image/png" href="/static/img/logo.png">
+  <link rel="icon" type="image/png" href="/static/img/favicon.png">
 
 </head>
 
@@ -87,7 +87,7 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-5">
-          <img src="/static/img/logo.png" height="350px" />
+          <img src="/static/img/logo.gif" height="350px" />
         </div>
       </div>
     </div>
@@ -98,11 +98,42 @@
           <hr />
           <div id="accordion">
             <div class="card">
+              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseThree">
+                <h5>
+                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseThree">
+                    Install from source code on Github <span class="dropdown-fa"><i class="fa fa-angle-down"
+                        aria-hidden="true"></i></span>
+                    <div class="os-icons">
+                      <img src="/static/img/linux-logo.png" height="40px">
+                      <img src="/static/img/windows-logo.png" height="40px">
+                      <img src="/static/img/apple-logo.png" height="40px">
+                    </div>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body terminal-card">
+                  <p>
+                    $ git clone https://github.com/askyourkode/build-flask-app
+                    <br />
+                    $ cd build-flask-app
+                    <br />
+                    $ python3 build-flask-app --help
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
               <div class="card-header" data-toggle="collapse" data-target="#collapseOne">
                 <h5>
                   <button class="btn btn-link card-title" aria-controls="collapseOne">
                     Install using pip3 <span class="dropdown-fa"><i class="fa fa-angle-down"
                         aria-hidden="true"></i></span>
+                    <div class="os-icons">
+                      <img src="/static/img/linux-logo.png" height="40px">
+                    </div>
                   </button>
                 </h5>
               </div>
@@ -132,6 +163,9 @@
                   <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseTwo">
                     Install using deb package <span class="dropdown-fa"><i class="fa fa-angle-down"
                         aria-hidden="true"></i></span>
+                    <div class="os-icons">
+                      <img src="/static/img/linux-logo.png" height="40px">
+                    </div>
                   </button>
                 </h5>
               </div>
@@ -152,30 +186,6 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseThree">
-                <h5>
-                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseThree">
-                    Install from source code on Github <span class="dropdown-fa"><i class="fa fa-angle-down"
-                        aria-hidden="true"></i></span>
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body terminal-card">
-                  <p>
-                    $ git clone https://github.com/askyourkode/build-flask-app
-                    <br />
-                    $ cd build-flask-app
-                    <br />
-                    $ python3 build-flask-app --help
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -290,6 +300,7 @@
           <p>Want to take a look at the github repo? <a href="https://github.com/askyourkode/build-flask-app">Click
               here!</a>
           </p>
+          <img src="/static/img/logo.png" class="contact-section-logo" height="120px">
           <p class="copyright-mark">&copy; Copyright 2020 Build Flask App</p>
         </div>
       </div>
