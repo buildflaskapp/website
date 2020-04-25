@@ -9,6 +9,8 @@ typewriter.pauseFor(3000)
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
     .pauseFor(1500)
+    .typeString('pip3 install -r requirements.txt' + '<br/>$ ')
+    .pauseFor(1900)
     .typeString('python3 app.py' + '<br/>')
     .pauseFor(2500)
     .changeDelay(0.01)
@@ -36,6 +38,10 @@ function checkCDN() {
 
     if (document.querySelector('.debugger-check').checked === true) {
         theString = theString + ' -d';
+    }
+
+    if (document.querySelector('.sqlite3-check').checked === true) {
+        theString = theString + ' -sl3';
     }
 
     if (document.querySelector('.docker-check').checked === true) {
