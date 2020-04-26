@@ -18,7 +18,7 @@ typewriter.pauseFor(3000)
     .start();
 
 function checkCDN() {
-    var theString = "build-flask-app hello-world";
+    var theString = "buildflaskapp hello-world";
 
     if (document.querySelector('.bootstrap-check').checked === true) {
         theString = theString + ' -bs';
