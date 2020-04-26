@@ -5,7 +5,7 @@ var typewriter = new Typewriter(termxBuildFlaskApp, {
 });
 
 typewriter.pauseFor(3000)
-    .typeString('$ build-flask-app hello-world' + '<br/>$ ')
+    .typeString('$ buildflaskapp hello-world' + '<br/>$ ')
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
     .pauseFor(1500)

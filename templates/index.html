@@ -51,7 +51,7 @@
   </div>
 </nav>
 
-<a class="github-fork-ribbon right-bottom fixed" href="http://github.com/askyourkode/build-flask-app" target="_blank"
+<a class="github-fork-ribbon right-bottom fixed" href="http://github.com/askyourkode/buildflaskapp" target="_blank"
   data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
 <body>
@@ -97,11 +97,11 @@
           <h1 class="section-title">Easy to install</h1>
           <hr />
           <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseThree">
+            <div class="card active">
+              <div class="card-header" data-toggle="collapse" data-target="#collapseOne">
                 <h5>
-                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseThree">
-                    Clone from Github <span class="dropdown-fa"><i class="fa fa-angle-down"
+                  <button class="btn btn-link card-title" aria-controls="collapseOne">
+                    Install using pip3 <span class="dropdown-fa"><i class="fa fa-angle-down"
                         aria-hidden="true"></i></span>
                     <div class="os-icons">
                       <img src="/static/img/linux-logo.png" height="40px">
@@ -112,76 +112,21 @@
                 </h5>
               </div>
 
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body terminal-card">
-                  <p>
-                    $ git clone https://github.com/askyourkode/build-flask-app
-                    <br />
-                    $ cd build-flask-app
-                    <br />
-                    $ python3 build-flask-app --help
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" data-toggle="collapse" data-target="#collapseOne">
-                <h5>
-                  <button class="btn btn-link card-title" aria-controls="collapseOne">
-                    Install using pip3 <span class="dropdown-fa"><i class="fa fa-angle-down"
-                        aria-hidden="true"></i></span>
-                    <div class="os-icons">
-                      <img src="/static/img/linux-logo.png" height="40px">
-                    </div>
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body terminal-card">
                   <p>
                     <h3><u>How to install?</u></h3>
                     $ apt-get install python3-pip
                     <br />
-                    $ pip3 install build-flask-app
+                    $ pip3 install buildflaskapp
                     <br />
-                    $ build-flask-app --help
+                    $ buildflaskapp --version
                   </p>
                   <p>----------------------------------------------------</p>
                   <p>
                     <h3><u>How to uninstall?</u></h3>
-                    $ pip3 uninstall build-flask-app
+                    $ pip3 uninstall buildflaskapp
                   </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
-                <h5>
-                  <button class="btn btn-link card-title" aria-expanded="true" aria-controls="collapseTwo">
-                    Install using deb package <span class="dropdown-fa"><i class="fa fa-angle-down"
-                        aria-hidden="true"></i></span>
-                    <div class="os-icons">
-                      <img src="/static/img/linux-logo.png" height="40px">
-                    </div>
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body terminal-card">
-                  <p>Download the deb package <a href="{{ url_for('downloadApp') }}">here</a>
-                    <br />
-                    <h3><u>How to install?</u></h3>
-                    $ sudo dpkg -i build-flask-app_1.0_all.deb
-                    <br />
-                    $ build-flask-app --help
-                  </p>
-                  <p>----------------------------------------------------</p>
-                  <h3><u>How to uninstall?</u></h3>
-                  $ sudo apt-get remove build-flask-app
                   <br />
                 </div>
               </div>
@@ -263,7 +208,7 @@
                   <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
                 <p class="terminal-usage-title">root@70606kaf3efi:~</p>
-                <p>$ <span class="usage-build-flask-app">build-flask-app hello-world</span></p>
+                <p>$ <span class="usage-build-flask-app">buildflaskapp hello-world</span></p>
                 <p>$ <span class="usage-cd">cd hello-world/ </span></p>
                 <p>$ <span class="usage-runApp">python3 app.py</span></p>
               </div>
@@ -300,13 +245,13 @@
       <h1 class="section-title">Contact</h1>
       <div class="row center" style="text-align: center;">
         <div class="col">
-          <p>Want to create an issue? <a href="https://github.com/askyourkode/build-flask-app/issues/new">Click
+          <p>Want to create an issue? <a href="https://github.com/askyourkode/buildflaskapp/issues/new">Click
               here!</a>
           </p>
-          <p>Want to take a look at the pypi project? <a href="https://pypi.org/project/build-flask-app/">Click
+          <p>Want to take a look at the pypi project? <a href="https://pypi.org/project/buildflaskapp/">Click
               here!</a>
           </p>
-          <p>Want to take a look at the github repo? <a href="https://github.com/askyourkode/build-flask-app">Click
+          <p>Want to take a look at the github repo? <a href="https://github.com/askyourkode/buildflaskapp">Click
               here!</a>
           </p>
           <img src="/static/img/logo.png" class="contact-section-logo" height="120px">
