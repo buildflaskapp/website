@@ -1,10 +1,10 @@
 var termxBuildFlaskApp = document.querySelector('.termX-build-flask-app');
 
 var typewriter = new Typewriter(termxBuildFlaskApp, {
-    // cursor: " "
+    delay: 80
 });
 
-typewriter.pauseFor(3000)
+typewriter.pauseFor(3800)
     .typeString('$ buildflaskapp hello-world' + '<br/>$ ')
     .pauseFor(1000)
     .typeString('cd hello-world' + '<br/>$ ')
