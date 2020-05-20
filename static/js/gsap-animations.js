@@ -1,8 +1,8 @@
 gsap.from(".navbar", {duration: 0.5, y: -100, opacity: 0, scale: 1});
 
-gsap.from(".ourBrand", {duration: 0.5, delay:0.5, y: -20, opacity: 0, ease: "circ.out", scale: 1});
+gsap.from(".brand-logo", {duration: 0.5, delay: 0.5, opacity: 0, scale: 0.4, rotation: 90});
 
-gsap.from(".brand-logo", {duration: 0.5, delay: 0.7, opacity: 0, scale: 1, rotation: 90});
+gsap.from(".brand-text", {duration: 0.95, delay:0.97, x: -100, opacity: 0, scale: 1});
 
 gsap.from(".nav-link", {duration: 0.5, delay:0.5, y: -10, stagger: 0.2, opacity: 0, scale: 1});
 
