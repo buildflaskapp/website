@@ -13,280 +13,31 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav navbar-right nav-stacked mr-auto">
-      <a href="/">
-        <p class="navbar-brand ourBrand">
-          <img src="/static/img/logo.png" width="30" height="35" class="d-inline-block align-top brand-logo">
-          <span class='brand-text'>Build flask app</span>
-        </p>
-      </a>
-    </ul>
-    <ul class="nav navbar-right nav-stacked ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/#landingPage">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#installation">Installation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#usage">Usage</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#examples">Examples</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
 <a class="github-fork-ribbon right-bottom fixed" href="http://github.com/askyourkode/buildflaskapp" target="_blank"
   data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
+{% from './macros/nav.html' import nav %}
+{% from './macros/homepage.html' import homepage %}
+{% from './macros/about.html' import about %}
+{% from './macros/installation.html' import installation %}
+{% from './macros/usage.html' import usage %}
+{% from './macros/examples.html' import examples %}
+{% from './macros/contact.html' import contact %}
+
+
 <body>
-
+  
+  {{ nav() }}
+  
   <div class="container">
-    <div class="section landingPage center" id="landingPage">
-      <div class="row">
-        <div class="col">
-          <h1 class="main-title">Build flask app</h1>
-          <p class="title-info">Build a Minimal Flask Application using one command! </p>
-          <div class="code-to-run">
-            <p class="title-in-terminal"><b>root@70606deb02d7:~</b></p>
-            <div class="icon-in-terminal">
-              <i class="fa fa-window-minimize" aria-hidden="true"></i>
-              <i class="fa fa-window-maximize" aria-hidden="true"></i>
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <p class="termX-build-flask-app"></p>
-          </div>
-          <br />
-          <div class="os-icons">
-            <img src="/static/img/linux-logo.png" class="os-logo" height="40px">
-            <img src="/static/img/windows-logo.png" class="os-logo" height="40px">
-            <img src="/static/img/apple-logo.png" class="os-logo" height="40px">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section center logo-section" id="about">
-      <div class="row">
-        <div class="col-md-5 about-title">
-          <h1 class="section-title">About</h1>
-          <hr />
-
-          <div class="about-text">
-            <p><u>buildflaskapp</u> is a commandline tool written in Python and made compatible for all Unix and Windows
-              OS. The aim is to generate a minimal Flask application simply by running a command.</p>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <img src="/static/img/logo.gif" height="350px" />
-        </div>
-      </div>
-    </div>
-    <div class="section installation" id="installation">
-      <div class="row">
-        <div class="col">
-          <h1 class="section-title">Easy to install
-            <div class="os-icons">
-              <img src="/static/img/linux-logo.png" height="40px">
-              <img src="/static/img/windows-logo.png" height="40px">
-              <img src="/static/img/apple-logo.png" height="40px">
-            </div>
-          </h1>
-          <hr />
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header" data-toggle="collapse" data-target="#collapseOne">
-                <h5>
-                  <button class="btn btn-link card-title" aria-controls="collapseOne">
-                    How to install?<span class="dropdown-fa"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body terminal-card">
-                  <p>
-                    $ pip3 install buildflaskapp
-                    <br />
-                    $ buildflaskapp --version
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" data-toggle="collapse" data-target="#collapseTwo">
-                <h5>
-                  <button class="btn btn-link card-title" aria-controls="collapseTwo">
-                    How to uninstall? <span class="dropdown-fa"><i class="fa fa-angle-down"
-                        aria-hidden="true"></i></span>
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body terminal-card">
-                  <p>
-                    $ pip3 uninstall buildflaskapp
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section usage" id="usage">
-      <div class="row">
-        <div class="col">
-          <h1 class="section-title">Easy to use</h1>
-          <hr />
-          <div class="cdn-options">
-            <div class="row">
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="bootstrap-check custom-control-input" onclick="return checkCDN()"
-                    id="bootstrap-check">
-                  <label class="custom-control-label" for="bootstrap-check">Bootstrap</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input gsap-check" onclick="return checkCDN()"
-                    id="gsap-check">
-                  <label class="custom-control-label gsap-check-label" for="gsap-check">Gsap</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input jquery-check" onclick="return checkCDN()"
-                    id="jquery-check">
-                  <label class="custom-control-label jquery-check-label" for="jquery-check">jQuery</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input fontawesome-check" onclick="return checkCDN()"
-                    id="fontawesome-check">
-                  <label class="custom-control-label fontawesome-check-label"
-                    for="fontawesome-check">Font-awesome</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input docker-check" onclick="return checkCDN()"
-                    id="docker-check">
-                  <label class="custom-control-label docker-check-label" for="docker-check">Docker</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input debugger-check" onclick="return checkCDN()"
-                    id="debugger-check">
-                  <label class="custom-control-label debugger-check-label" for="debugger-check">Debugger</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="custom-control">
-                  <input type="checkbox" class="custom-control-input sqlite3-check" onclick="return checkCDN()"
-                    id="sqlite3-check">
-                  <label class="custom-control-label sqlite3-check-label" for="sqlite3-check">SQLite3</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col">
-              <div class="terminal-usage">
-                <div class="icon-in-terminal">
-                  <i class="fa fa-window-minimize" aria-hidden="true"></i>
-                  <i class="fa fa-window-maximize" aria-hidden="true"></i>
-                  <i class="fa fa-times" aria-hidden="true"></i>
-                </div>
-                <div class="terminal-usage-text">
-                  <p class="terminal-usage-title"><b>root@70606kaf3efi:~</b></p>
-                  <p>
-                    $ <span class="usage-build-flask-app">buildflaskapp hello-world</span>
-                    <br>
-                    $ <span class="usage-cd">cd hello-world/ </span>
-                    <br>
-                    $ <span class="usage-pip-install">pip3 install -r requirements.txt </span>
-                    <br>
-                    $ <span class="usage-runApp">python3 app.py</span>
-                    <br>
-                    <span class="white-text">
-                      * Serving Flask app "app" on localhost:5000
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="section examples" id="examples">
-      <div class="row" style="text-align: center;">
-        <div class="col">
-          <h1 class="section-title">Examples</h1>
-          <hr />
-          <a href="https://styln-vib.herokuapp.com/" target="_blank">
-            <h1>Styln Vibe</h1>
-          </a>
-          <a href="https://kouul-pokedex.herokuapp.com/" target="_blank">
-            <h1>Pokedex</h1>
-          </a>
-          <a href="https://kouul.website/" target="_blank">
-            <h1>My Portfolio</h1>
-          </a>
-          <a href="https://kouuls-todo.herokuapp.com/" target="_blank">
-            <h1>To-Do list</h1>
-          </a>
-          <a href="https://resu-maker.herokuapp.com/" target="_blank">
-            <h1>Resu-maker</h1>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="contact contact-section" id="contact">
-      <h1 class="section-title">Contact</h1>
-      <div class="row center" style="text-align: center;">
-        <div class="col">
-          <p>Want to create an issue? <a href="https://github.com/askyourkode/buildflaskapp/issues/new">Click
-              here!</a>
-          </p>
-          <p>Want to take a look at the pypi project? <a href="https://pypi.org/project/buildflaskapp/">Click
-              here!</a>
-          </p>
-          <p>Want to take a look at the github repo? <a href="https://github.com/askyourkode/buildflaskapp">Click
-              here!</a>
-          </p>
-          <img src="/static/img/logo.png" class="contact-section-logo" height="120px">
-          <p class="copyright-mark">&copy; Copyright 2020 Build Flask App</p>
-        </div>
-      </div>
-    </div>
+    {{ homepage() }}
+    {{ about() }}
+    {{ installation() }}
+    {{ usage() }}
+    {{ examples() }}
+    {{ contact() }}
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
