@@ -1,0 +1,98 @@
+{% macro usage() %}
+<div class="section usage" id="usage">
+    <div class="row">
+        <div class="col">
+            <h1 class="section-title">Easy to use</h1>
+            <hr />
+            <div class="cdn-options">
+                <div class="row">
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="bootstrap-check custom-control-input"
+                                onclick="return checkCDN()" id="bootstrap-check">
+                            <label class="custom-control-label" for="bootstrap-check">Bootstrap</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input gsap-check" onclick="return checkCDN()"
+                                id="gsap-check">
+                            <label class="custom-control-label gsap-check-label" for="gsap-check">Gsap</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input jquery-check" onclick="return checkCDN()"
+                                id="jquery-check">
+                            <label class="custom-control-label jquery-check-label" for="jquery-check">jQuery</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input fontawesome-check"
+                                onclick="return checkCDN()" id="fontawesome-check">
+                            <label class="custom-control-label fontawesome-check-label"
+                                for="fontawesome-check">Font-awesome</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input docker-check" onclick="return checkCDN()"
+                                id="docker-check">
+                            <label class="custom-control-label docker-check-label" for="docker-check">Docker</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input debugger-check"
+                                onclick="return checkCDN()" id="debugger-check">
+                            <label class="custom-control-label debugger-check-label"
+                                for="debugger-check">Debugger</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="custom-control">
+                            <input type="checkbox" class="custom-control-input sqlite3-check"
+                                onclick="return checkCDN()" id="sqlite3-check">
+                            <label class="custom-control-label sqlite3-check-label" for="sqlite3-check">SQLite3</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col">
+                    <div class="terminal-usage">
+                        <div class="icon-in-terminal">
+                            <i class="fa fa-window-minimize" aria-hidden="true"></i>
+                            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="terminal-usage-text">
+                            <p class="terminal-usage-title"><b>root@70606kaf3efi:~</b></p>
+                            <p>
+                                $ <span class="usage-build-flask-app">buildflaskapp hello-world</span>
+                                <br>
+                                $ <span class="usage-cd">cd hello-world/ </span>
+                                <br>
+                                $ <span class="usage-pip-install">pip3 install -r requirements.txt </span>
+                                <br>
+                                $ <span class="usage-runApp">python3 app.py</span>
+                                <br>
+                                <span class="white-text">
+                                    * Serving Flask app "app" on localhost:5000
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endmacro %}
